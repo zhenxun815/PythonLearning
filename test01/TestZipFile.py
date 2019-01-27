@@ -10,13 +10,27 @@
 import os
 import time
 
+
+def verify_dir(dir_name):
+    if not os.path.exists(dir_name):
+        os.mkdir(dir_name)
+
+
 source = ['D:/python_work/test_source/test0.txt', 'D:/python_work/test_source/test1.txt']
 target_dir = 'D:/python_work/test_source/backup'
 
-target = target_dir + os.sep + time.strftime('%Y%m%d%H%M%S') + '.zip'
+today = target_dir + os.sep + time.strftime('%Y%m%d')
+now = time.strftime('%H%M%S')
 
-if not os.path.exists(target_dir):
-    os.mkdir(target_dir)
+verify_dir(target_dir)
+verify_dir(today)
+
+comment = input('enter commnent...')
+
+if len(comment) == 0:
+    target = today + os.sep + now + '.zip'
+else:
+    target = today + os.sep + now + '_' + comment.replace(' ', '_') + '.zip'
 
 zip_command = 'zip -r {0} {1}'.format(target, ' '.join(source))
 
