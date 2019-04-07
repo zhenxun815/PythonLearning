@@ -8,10 +8,14 @@
 # @Email: GuoYiheng89@gmail.com
 # @Time: 2019/1/8 22:09
 
-from module import Module1
-from module.Module2 import __version__, fun
+
+#from test01.module.Module2 import __version__, fun
+import test01.module.Module1
 
 """
+import os
+import sys
+
 for i in sys.argv:
     print('argv:', i)
 
@@ -20,6 +24,8 @@ print('\n\n The PYTHONPATH is ', sys.path, '\n')
 print('current working dir:', os.getcwd())
 print('current working pid:', os.getppid())
 """
+
+
 
 """
 print('Module1 version:', Module1.__version__)
@@ -30,4 +36,4 @@ fun()
 
 # dir()函数返回一个list,list中为module里包含的函数,类,变量
 print(dir())
-print(dir(Module1))
+print(dir(test01))
