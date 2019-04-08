@@ -13,11 +13,15 @@ from test02.student import Student
 t = Teacher('Mr Guo', 40, 10000)
 s = Student('tt', 20, 99)
 
+print('#############')
+Teacher.say_hi(t)
+Teacher.say_hi(s)
+
+print('#############')
 t.tell()
 s.tell()
 
 print('#############')
-
 members = [t, s]
 for member in members:
     member.tell()
