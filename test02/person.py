@@ -32,11 +32,8 @@ class Person:
             # print("There are still {:d} living person.".format(self.__class__.population))
 
     def say_hi(self):
-        print('Name is:', self.name)
+        print('Name is:', self.name, end=' ')
 
     @classmethod
     def how_many(cls):
         print("Person population is {:d}".format(cls.population))
-
-
-

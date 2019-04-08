@@ -15,7 +15,9 @@ s = Student('tt', 20, 99)
 
 print('#############')
 Teacher.say_hi(t)
+print()
 Teacher.say_hi(s)
+print()
 
 print('#############')
 t.tell()
