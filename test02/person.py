@@ -9,7 +9,12 @@
 # @Time: 2019/4/7 20:14
 
 
-class Person:
+class Person(object):
+    """Base class
+
+    Attributes:
+        population: total count of instances
+    """
     # Class variables,only one copy, all instances share
     population = 0
 

@@ -10,7 +10,7 @@
 
 
 #from test01.module.Module2 import __version__, fun
-import test01.module.Module1
+import module.Module1
 
 """
 import os
