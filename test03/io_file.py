@@ -8,9 +8,9 @@
 # @Email: GuoYiheng89@gmail.com
 # @Time: 4/9/19 9:36 PM
 
-text = 'something to write'
+text = 'something to write,呵呵'
 
-f = open('test.txt', 'w')
+f = open('test.txt', 'w', encoding='utf-8')
 f.write(text)
 f.close()
 
@@ -25,6 +25,6 @@ f.close()
 
 # recommend
 print('###################')
-with open('test.txt') as f:
+with open('test.txt', encoding='utf-8') as f:
     for line in f:
         print(line)
