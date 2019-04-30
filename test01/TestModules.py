@@ -9,7 +9,7 @@
 # @Time: 2019/1/8 22:09
 
 
-#from test01.module.Module2 import __version__, fun
+# from test01.module.Module2 import __version__, fun
 import module.Module1
 
 """
@@ -24,8 +24,6 @@ print('\n\n The PYTHONPATH is ', sys.path, '\n')
 print('current working dir:', os.getcwd())
 print('current working pid:', os.getppid())
 """
-
-
 
 """
 print('Module1 version:', Module1.__version__)

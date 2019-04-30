@@ -83,6 +83,3 @@ total(0, 1, 2, 3, aa=10, bb=20, cc=30)
 # key: bb value: 20
 # key: cc value: 30
 """
-
-
-

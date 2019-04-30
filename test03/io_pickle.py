@@ -17,6 +17,6 @@ with open(shop_list_file, 'wb') as f:
 
 del shop_list
 
-with open(shop_list_file,'rb') as f:
-    store_list= pickle.load(f)
+with open(shop_list_file, 'rb') as f:
+    store_list = pickle.load(f)
     print(store_list)
